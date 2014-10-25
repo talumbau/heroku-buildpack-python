@@ -21,6 +21,9 @@ if [ ! $STACK = $CACHED_PYTHON_STACK ]; then
   bpwatch stop uninstall_python
 fi
 
+puts-step "about to install a python hope this works"
+puts-step "STACK variable ($STACK)"
+puts-step "PYTHON_VERSION variable ($PYTHON_VERSION)"
 
 if [ ! "$SKIP_INSTALL" ]; then
   bpwatch start install_python
